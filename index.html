@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>साहित्य सरिता - Literary Journal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <meta name="description" content="साहित्य सरिता एक त्रैमासिक (Quarterly) ई-जनरल है, जो हिंदी साहित्य, संस्कृति, मानविकी, दर्शन एवं समाज विज्ञान के क्षेत्र में मौलिक, नवोन्मेषपूर्ण और सृजनात्मक लेख प्रकाशित करता है।">
+    <meta name="keywords" content="साहित्य सरिता, साहित्यिक जर्नल, हिंदी साहित्य, लेखक मार्गदर्शन, शोध पत्र, समीक्षा आलेख, त्रैमासिक जर्नल, साहित्यिक आलोचना, पुस्तक समीक्षा, कथा-काव्य लेखन">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,9 +32,10 @@
 
     <div class="container">
       <div class="author-details section" id="home">
-        <div class="author-photo">S</div>
+        <div class="author-photo" > <img src="sahitya.png" alt="S"></div>
+        <!-- <div class="author-photo"><img src="sahitya.jpg" alt="S" style="width:100%; height:100%; border-radius:50%; object-fit:cover;"></div> -->
         <!-- Replace div above with: <img src="path-to-photo.jpg" alt="Author Photo" class="author-photo"> when ready -->
-        <div class="author-name">Sarita</div>
+        
         <div class="author-bio">
           साहित्यिक रचनाकार, संपादक और विचारशील लेखिका। कविता, कहानी और लेखन में
           रुचि। नवोदित रचनाकारों को मंच देने हेतु प्रतिबद्ध।
@@ -48,9 +51,13 @@
       </div>
     </div>
 
+    <div class="contact-container section" id="submission">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd70xNbIUobwSVc-aMTIrLeL2UOeudjDGb-SHgUXPN0xm3dGg/viewform?embedded=true" style="align-items: center;" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
     <!-- Scope of Journal  -->
     <div class="scope-container section" id="scope">
-      <h2 class="section-title">Scope of the Journal</h2>
+      <h2 class="section-title">जननल का दायरा (Scope of the Journal)</h2>
       <ul class="scope-list">
         <li>
           हिंदी सात्रित्य के सभी पिलुओं पि शोध पि, समीक्षा आलेख, प्रर्ालीबद्ध
@@ -71,7 +78,7 @@
 
     <!-- Response and Review time -->
     <div class="timeline-container section" id="response">
-      <h2 class="section-title">Response and Review Time</h2>
+      <h2 class="section-title"> प्रतिक्रिया और समीक्षा समय (Response and Review Time)</h2>
       <div class="timeline-content">
         <li>
           <p>
@@ -372,36 +379,67 @@
 
     <!-- Contact Form -->
     <div class="contact-container section" id="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter the name" name="name" required>
+      <h2 class="section-title">Enquery Form..</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="icon location-icon"></span>
+            <div>
+              <h3>Location</h3>
+              <p>Jhansi [UP] India</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon email-icon"></span>
+            <div>
+              <h3>E-mail</h3>
+              <p>editorsahityasarita@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon phone-icon"></span>
+            <div>
+              <h3>Phone</h3>
+              <p>+91-8848977937</p>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter the Email ID" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Enter the Subject" name="subject" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Enter the Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xrbyqoeo" method="POST" >
+          <input type="text" placeholder="Your Full Name" name="fullname" required />
+          <input type="text" placeholder="Phone Number" name="phone" required />
+          <input type="email" placeholder="something@gmail.com" name="email" required />
+          <textarea placeholder="Message" name="message" required></textarea>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
     </div>
+
     
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70xNbIUobwSVc-aMTIrLeL2UOeudjDGb-SHgUXPN0xm3dGg/viewform?usp=header" style="align-items: center;" target="_blank">Fill the form</a>
+    
+    <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70xNbIUobwSVc-aMTIrLeL2UOeudjDGb-SHgUXPN0xm3dGg/viewform?usp=header" style="align-items: center;" target="_blank">Fill the form</a> -->
 
-    <br>
-    <br>
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd70xNbIUobwSVc-aMTIrLeL2UOeudjDGb-SHgUXPN0xm3dGg/viewform?embedded=true" style="align-items: center;" width="1000" height="3630" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
     <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">साहित्य सरिता</div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#scope">Scope of Journal</a></li>
+            <li><a href="#response">Response and Review Time</a></li>
+            <li><a href="#publication">Publication and Policy</a></li>
+            <li><a href="#guidelines">Author Guidelines</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-copyright">&copy; 2023 साहित्य सरिता. All rights reserved.</div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
