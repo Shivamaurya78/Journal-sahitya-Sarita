@@ -172,7 +172,7 @@
       transition: background-color 0.3s ease;
     }
     .author-details:hover {
-      background-color: #bdcdf0;
+      background-color: #e9eef9;
     }
     .author-photo {
      max-width: 200px;
@@ -711,8 +711,10 @@
         @media (max-width: 768px) {
             .guidelines-container {
                 padding: 1.8rem;
+                opacity: 1;
+                transform: translateY(0);
             }
-            .article-description, 
+            .article-description,
             .sub-points {
                 margin-left: 1.2rem;
             }
