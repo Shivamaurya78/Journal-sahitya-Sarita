@@ -269,46 +269,97 @@
       }
     }
 
-    /* Additional responsiveness for smaller devices */
-    @media (max-width: 480px) {
-      .container {
-        width: 95%;
-        padding: 12px;
-      }
-      .author-photo {
-        max-width: 120px;
-        width: 50vw;
-      }
-      .author-bio {
-        font-size: 0.9rem;
-        padding: 0 10px;
-      }
-      .about-title {
-        font-size: 1rem;
-        padding: 3px 6px;
-      }
-      .about-text {
-        font-size: 0.9rem;
-      }
-      nav ul {
-        gap: 1rem;
-      }
-      nav ul li a {
-        font-size: 0.9rem;
-      }
-      .footer-container {
-        padding: 0 1rem;
-      }
-      .footer-logo {
-        font-size: 1.2rem;
-      }
-      .footer-nav ul {
-        gap: 0.5rem;
-      }
-      .footer-nav a {
-        font-size: 0.9rem;
-      }
-    }
+/* Additional responsiveness for smaller devices */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 12px;
+  }
+  .author-photo {
+    max-width: 120px;
+    width: 50vw;
+  }
+  .author-bio {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  .about-title {
+    font-size: 1rem;
+    padding: 3px 6px;
+  }
+  .about-text {
+    font-size: 0.9rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+  .footer-container {
+    padding: 0 1rem;
+  }
+  .footer-logo {
+    font-size: 1.2rem;
+  }
+  .footer-nav ul {
+    gap: 0.5rem;
+  }
+  .footer-nav a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fixes for mobile content visibility */
+@media (max-width: 768px) {
+  /* Ensure body and html have proper height and overflow */
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    min-height: 100vh !important;
+  }
+
+  /* Ensure main container and sections have auto height and visible overflow */
+  .container,
+  .section,
+  .author-details,
+  .about-section,
+  .scope-container,
+  .timeline-container,
+  .policy-container,
+  .guidelines-container,
+  .contact-container {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    visibility: visible !important;
+    display: block !important;
+    min-height: auto !important;
+  }
+
+  /* Prevent header and nav overlap */
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+  }
+
+  nav {
+    top: 60px !important; /* Adjust if header height changes */
+    z-index: 100 !important;
+  }
+
+  /* Overlay should cover entire viewport */
+  .overlay {
+    height: 100vh !important;
+  }
+
+  /* Force all sections to be visible */
+  .section {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
 
     /* Medium devices (tablets) */
     @media (min-width: 481px) and (max-width: 768px) {
