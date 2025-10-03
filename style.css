@@ -176,7 +176,7 @@
     }
     .author-photo {
      max-width: 200px;
-     
+
      width: 40vw;
      height: auto;
      overflow: hidden;
@@ -186,6 +186,7 @@
      align-items: center;
     }
     .author-photo img {
+      max-width: 100%;
       width: 100%;
       height: auto;
       object-fit: cover;
@@ -263,8 +264,8 @@
         padding: 16px 0;
       }
       .author-photo {
-        max-width: 150px;
-        width: 35vw;
+        max-width: 100%;
+        width: 100%;
         height: auto;
       }
     }
@@ -276,8 +277,8 @@
     padding: 12px;
   }
   .author-photo {
-    max-width: 120px;
-    width: 50vw;
+    max-width: 100%;
+    width: 100%;
   }
   .author-bio {
     font-size: 0.9rem;
