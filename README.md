@@ -27,5 +27,4 @@ Sahitya Sarita aims to:
 - Authors retain copyright; the journal holds publishing rights.
 
 ---
-live preview Website
-https://shivamaurya78.github.io/Journal-sahitya-Sarita/
+
